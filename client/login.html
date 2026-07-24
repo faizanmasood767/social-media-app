@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Log in · fieldnotes</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="page page--narrow">
+    <div class="card auth-card">
+      <h1>Welcome back</h1>
+      <p class="subtitle">Log in to see what your circle is posting.</p>
+
+      <div id="formError" class="form-error"></div>
+
+      <form id="loginForm">
+        <div class="field">
+          <label for="username">Username or email</label>
+          <input type="text" id="username" autocomplete="username" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Log in</button>
+      </form>
+
+      <p class="form-footer">New here? <a href="register.html">Create an account</a></p>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

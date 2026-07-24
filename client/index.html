@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Feed · fieldnotes</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="page">
+    <div class="card composer">
+      <textarea id="postInput" maxlength="500" placeholder="What's on your mind?"></textarea>
+      <div class="composer-footer">
+        <span class="char-count mono" id="charCount">0 / 500</span>
+        <button class="btn btn--primary" id="postBtn">Post</button>
+      </div>
+    </div>
+
+    <div class="feed-tabs">
+      <button id="tabAll" class="active">All posts</button>
+      <button id="tabFollowing">Following</button>
+    </div>
+
+    <div id="feedList"></div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/postcard.js"></script>
+  <script src="js/feed.js"></script>
+</body>
+</html>

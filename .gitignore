@@ -1,0 +1,11 @@
+# Environment variables (contains secrets - never commit)
+server/.env
+.env
+
+# Dependencies
+node_modules/
+server/node_modules/
+
+# OS / editor junk
+.DS_Store
+*.log
